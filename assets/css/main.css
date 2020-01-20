@@ -71,6 +71,11 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* For Header; My Name */
+.bg2 {
+	color: #00d3b7;
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -97,6 +102,7 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
+	/* For Generic */
 	body {
 		background: #312450;
 	}
@@ -195,12 +201,12 @@ input, select, textarea {
 			position: relative;
 			padding-bottom: 0.35em;
 		}
-
+			/* For Generic */
 			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #00d3b7, #e8e8e8);
+				background-image: -webkit-linear-gradient(to right, #00d3b7, #e8e8e8);
+				background-image: -ms-linear-gradient(to right, #00d3b7, #e8e8e8);
+				background-image: linear-gradient(to right, #00d3b7, #e8e8e8);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -1998,6 +2004,7 @@ input, select, textarea {
 			width: 50%;
 			border-top: solid 1px rgba(255, 255, 255, 0.15);
 			position: relative;
+			background-color: black;
 		}
 
 			.features section:nth-child(-n + 2) {
@@ -2444,7 +2451,7 @@ input, select, textarea {
 		input[type="radio"]:checked + label:before {
 			background: #ffffff;
 			border-color: #ffffff;
-			color: #b74e91;
+			color: #ff00a2;
 			content: '\f00c';
 		}
 
@@ -2463,12 +2470,12 @@ input, select, textarea {
 	}
 
 	::-webkit-input-placeholder {
-		color: rgba(255, 255, 255, 0.35) !important;
+		color: rgba(248, 6, 6, 0.35) !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: rgba(255, 255, 255, 0.35) !important;
+		color: rgba(245, 235, 235, 0.35) !important;
 		opacity: 1.0;
 	}
 
@@ -2478,7 +2485,7 @@ input, select, textarea {
 	}
 
 	:-ms-input-placeholder {
-		color: rgba(255, 255, 255, 0.35) !important;
+		color: rgba(255, 0, 0, 0.35) !important;
 		opacity: 1.0;
 	}
 
@@ -3022,7 +3029,8 @@ input, select, textarea {
 				-webkit-transition: opacity 1s ease;
 				-ms-transition: opacity 1s ease;
 				transition: opacity 1s ease;
-				background: rgba(49, 36, 80, 0.9);
+				/* Spotlight Picture BG Color */
+				background: rgba(49, 49, 49, 0.9);
 				content: '';
 				display: block;
 				height: 100%;
@@ -3039,6 +3047,10 @@ input, select, textarea {
 			display: -webkit-flex;
 			display: -ms-flex;
 			display: flex;
+			/*Spotlight BG color */
+			background-color: #0d0b0b;
+			border-top: 0cm;
+			border-color: yellow;
 			-moz-flex-direction: column;
 			-webkit-flex-direction: column;
 			-ms-flex-direction: column;
@@ -3064,7 +3076,7 @@ input, select, textarea {
 			}
 
 		.spotlights > section:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.05);
+			background-color: rgba(255, 0, 0, 0.05);
 		}
 
 		.spotlights > section:nth-child(3) {
@@ -3363,7 +3375,7 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-/* Header */
+/* Header For Generic HTML */
 
 	#header {
 		display: -moz-flex;
@@ -3524,7 +3536,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: #0d0b0b;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3761,14 +3773,14 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:before {
-				background: #3c2c62;
+				background: #1c1717;
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #00d3b7, #e8e8e8);
+				background-image: -webkit-linear-gradient(to right, #00d3b7, #e8e8e8);
+				background-image: -ms-linear-gradient(to right, #00d3b7, #e8e8e8);
+				background-image: linear-gradient(to right, #00d3b7, #e8e8e8);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3857,7 +3869,7 @@ input, select, textarea {
 
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #b74e91;
+							background-color: #eeff00;
 						}
 
 		}
@@ -3870,13 +3882,14 @@ input, select, textarea {
 
 		}
 
-/* Intro */
+/* Intro - Top Image with Lines */
 
 	#intro {
 		background-attachment: fixed;
 		background-image: url("images/intro.svg");
 		background-position: top right;
 		background-repeat: no-repeat;
+		background-color: rgb(34, 34, 34);
 		background-size: 100% 100%;
 	}
 
